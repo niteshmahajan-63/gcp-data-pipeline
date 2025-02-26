@@ -1,4 +1,4 @@
-# Project Title
+# GCP DATA PIPELINE
 
 ## Description
 This project is designed to manage and process patient data using Google Cloud services, specifically BigQuery and Cloud Storage. It includes functionalities for loading data into BigQuery tables and managing schemas.
