@@ -1,0 +1,30 @@
+create table `sync_pre_merge.patients_new`
+(
+  patientid string,
+  encounterid string,
+  salutation string,
+  name string,
+  age int64,
+  gender string,
+  dob date,
+  maritalstatus string,
+  uid string,
+  mobile string,
+  alternatemobile string,
+  email string,
+  remarks string,
+  address string,
+  centrehash string,
+  city string,
+  state string,
+  country string,
+  nationality string,
+  pin string,
+  labname string,
+  patienthash string,
+  deceased bool,
+  joiningdate timestamp,
+  updateddate timestamp,
+  insertedon timestamp
+)
+cluster by patienthash;

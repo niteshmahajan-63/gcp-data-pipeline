@@ -20,7 +20,7 @@ The project requires a configuration file `config.ini` with the following settin
 ## Usage
 To run the project, execute the following command:
 ```
-python main.py
+python3 runner.py
 ```
 
 ## Data Loading

@@ -1,0 +1,4 @@
+-- update `sync_pre_merge.patientsnew_combine_premerge` as a set a.patientremoteid = b.patientremoteid from
+-- (select distinct patientremoteid as patientlocalid,min(matchremoteid) as patientremoteid,
+-- labname from `sync_target_merge.patients_match_merge` where match is true 
+-- group by patientlocalid,labname) as b where a.patientremoteid = b.patientlocalid and a.labname=b.labname and a.patientremoteid > b.patientremoteid

@@ -1,0 +1,4 @@
+
+pipelineState = {
+    'stepCounter' : 0
+}

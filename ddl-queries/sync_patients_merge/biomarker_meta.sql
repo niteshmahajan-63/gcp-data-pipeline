@@ -1,0 +1,20 @@
+CREATE TABLE `sync_merged.biomarkermeta` (
+  id INT64,
+  testid STRING,
+  testname STRING,
+  sourcetestname STRING,
+  rangestart STRING,
+  rangeend STRING,
+  unit STRING,
+  biomarkerstampid STRING,
+  normalizedbiomarkername STRING,
+  value STRING,
+  type STRING,
+  src STRING,
+  biomarkermetahash STRING, 
+  biomarkername STRING, 
+  sourcebiomarkername STRING,
+  code STRING,
+  labname STRING,
+  insertedon TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
+);

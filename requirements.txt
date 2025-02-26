@@ -1,0 +1,7 @@
+google-cloud-bigquery
+google-cloud-storage
+pandas
+pyarrow
+openpyxl
+requests
+pretty_html_table

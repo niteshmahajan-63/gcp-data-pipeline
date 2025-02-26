@@ -1,0 +1,3 @@
+truncate table `sync_ctas.biomarkers_ctasp`;
+
+insert into `sync_ctas.biomarkers_ctasp` (patientid, biomarkermetaid, bookingid, bookingdate, insertedon, valued, testid, testname, biomarkercode, labname,biomarkerhash,encounterid) SELECT a.patientremoteid as patientid, a.biomarkermetaid AS biomarkermetaid, a.bookingid AS bookingid, a.resultdate AS bookingdate, a.insertedon, a.resultnum AS valued, b.testid AS testid, b.testname As testname, a.biomarkercode, 'testclient' as labname,a.biomarkerhash,a.encounterid FROM `sync_merged.numeric` a JOIN `sync_merged.biomarkermeta` b ON a.biomarkermetaid = b.id;
