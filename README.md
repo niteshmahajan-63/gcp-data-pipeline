@@ -26,8 +26,4 @@ python3 runner.py
 ## Data Loading
 The `loadmasters.py` script is responsible for loading data into BigQuery tables. It supports loading data from Excel and CSV files, transforming the data as necessary to match the target schema.
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for discussion.
 
-## License
-This project is licensed under the MIT License.
